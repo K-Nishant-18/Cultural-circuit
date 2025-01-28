@@ -45,9 +45,25 @@ ul {
   line-height: 1.6;
 }
 
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.cart-button {
+  padding: 10px 20px;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
 /* Main Content */
 .main-content {
   display: flex;
+  padding-bottom: 100px;
 }
 
 .advertisement-section {
@@ -68,27 +84,7 @@ ul {
   padding: 20px;
 }
 
-/* Filters */
-.filter-sort-container {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  margin-bottom: 20px;
-  padding: 20px;
-}
-
-#category,
-#price-filter,
-#price-sort {
-  width: 220px;
-  height: 45px;
-  font-size: 18px;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  background-color: #f8f8f8;
-}
-
+/* Products Grid */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -107,30 +103,246 @@ ul {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  height: 200px;
-  object-fit: cover;
-  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .product-card h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  font-size: 1.2rem;
 }
 
 .product-card p {
-  font-size: 14px;
-  margin-bottom: 15px;
+  font-size: 0.9rem;
+  margin-top: 5px;
 }
 
 .product-card .price {
-  font-size: 16px;
-  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #ff7f50;
+  margin-top: 10px;
 }
 
 .product-card button {
-  padding: 10px 20px;
-  background-color: #ff7f50;
+  padding: 10px 15px;
+  background-color: #28a745;
   color: white;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.load-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.load-more-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.modal-content button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+/* General Button Styling */
+button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding around the text */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the button inline */
+  font-size: 16px; /* Font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Show cursor as a pointer */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for background and scale */
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Cart Button */
+.cart-button {
+  background-color: #ff8c00; /* Orange background for cart */
+  padding: 10px 15px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+/* Pagination Container */
+.pagination-container {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Align buttons vertically if needed */
+  margin: 20px 0; /* Add some spacing */
+  gap: 10px; /* Space between buttons */
+}
+
+/* Buttons inside Pagination Container */
+.pagination-container button {
+  background-color: #007bff; /* Blue background for buttons */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  font-size: 16px; /* Font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+/* Hover Effect for Pagination Buttons */
+.pagination-container button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Disabled Button Styling */
+.pagination-container button:disabled {
+  background-color: #cccccc; /* Greyed-out background */
+  cursor: not-allowed; /* Prevent hover effect */
+}
+
+
+/* Product Detail Modal Button */
+.modal .modal-content button {
+  background-color: #f44336; /* Red background for modal button */
+  font-size: 16px;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+/* Button Disabled (optional) */
+button:disabled {
+  background-color: #cccccc; /* Greyed-out button */
+  cursor: not-allowed; /* Prevent hover effect */
+}
+
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  font-size: 54px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+.close:hover {
+  color: red;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 20px;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
 }

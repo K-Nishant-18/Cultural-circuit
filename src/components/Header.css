@@ -10,8 +10,9 @@
   }
   
   .logo h1 {
-    font-size: 1.5rem;
-    color: #333;
+    font-size: 2rem;
+    color: #ff4d00;
+    font-weight: 600;
   }
   
   nav ul {
@@ -45,19 +46,5 @@
     color: #333;
   }
   
-  #cart-icon[data-count]:after {
-    content: attr(data-count);
-    position: absolute;
-    top: -5px;
-    right: -10px;
-    background: red;
-    color: white;
-    font-size: 0.8rem;
-    width: 18px;
-    height: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-  }
+ 
   

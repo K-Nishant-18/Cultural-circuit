@@ -29,3 +29,25 @@
     stroke-dashoffset: 0; /* Reveal the path */
   }
 }
+
+
+
+
+
+/* HeroSection.css */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&family=Rubik+Moonrocks&display=swap');
+
+.rubik-glitch-pop-regular {
+  font-family: "Rubik Glitch Pop", system-ui;
+  font-weight: 300;
+  /* font-size:larger; */
+  font-style: normal;
+  color:rgb(255, 255, 255);
+}
+
+.rubik-moonrocks-regular {
+    font-family: "Rubik Moonrocks", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }

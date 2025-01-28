@@ -201,7 +201,7 @@ const EducationalResources = () => {
   <SectionTitle>External Cultural Resources</SectionTitle>
   <div>
     <ExternalResourceButton href="https://www.culturalheritage.org/" target="_blank">Cultural Heritage Foundation</ExternalResourceButton>
-    <ExternalResourceButton href="https://www.museumsofbangalore.com/" target="_blank">Museums of Bangalore</ExternalResourceButton>
+    <ExternalResourceButton href="https://map-india.org/" target="_blank">Art Museums</ExternalResourceButton>
     <ExternalResourceButton href="https://www.artsy.net/" target="_blank">Artsy</ExternalResourceButton>
     <ExternalResourceButton href="https://www.culture.gov.uk/" target="_blank">UK Government Culture</ExternalResourceButton>
     <ExternalResourceButton href="https://www.smithsonianmag.com/culture/" target="_blank">Smithsonian Culture</ExternalResourceButton>

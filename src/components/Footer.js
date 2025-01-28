@@ -14,7 +14,7 @@ const FooterContent = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -101,7 +101,7 @@ const FooterLogo = styled.div`
 
   h1 {
     font-family: "Rubik Glitch Pop", sans-serif;
-    font-size: 2.9rem;
+    font-size: 2rem;
     color: #fff;
     margin: 0;
     text-align: center;
@@ -135,18 +135,18 @@ const Footer = () => {
       <FooterContent>
         <FooterColumn>
           <FooterLogo>
-            <h1 className="rubik-moonrocks-regular">Collegia.</h1>
-            <p>Your Campus, Your Future.</p>
+            <h1 className="rubik-moonrocks-regular">TheCulturalCircuit</h1>
+            <p>Explore. Experience. Embrace.</p>
           </FooterLogo>
         </FooterColumn>
 
         <FooterColumn>
           <h4>About Us</h4>
           <ul>
-            <li><a href="/about">Our Story</a></li>
-            <li><a href="/team">Team</a></li>
+            <li><a href="/about-us">Our Story</a></li>
+            <li><a href="/about-us">Team</a></li>
             <li><a href="/careers">Careers</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/contact-us">Contact</a></li>
           </ul>
         </FooterColumn>
 

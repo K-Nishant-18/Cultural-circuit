@@ -12,7 +12,7 @@ const HomePage = () => {
           <h1>Explore, Celebrate, Connect</h1>
           <p>Your journey into the vibrant world of cultural heritage starts here.</p>
           <div className="hero-buttons">
-            <Link to="/festival-highlights" className="btn primary">Explore Festivals</Link>
+            <Link to="/festivals" className="btn primary">Explore Festivals</Link>
             <Link to="/products" className="btn secondary">Cultural Products</Link>
           </div>
         </div>
@@ -68,24 +68,43 @@ const HomePage = () => {
 
       {/* Most Visited Places */}
       <section className="visited-places">
-        <h2>Most Visited Places</h2>
-        <div className="places-carousel">
-          <div className="place-card">
-            <img src="https://images.unsplash.com/photo-1671512226229-e05294dd1970?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Place" />
-            <h3>Varanasi Ghats</h3>
-            <p>The soul of India’s ancient culture and spirituality.</p>
-          </div>
-          <div className="place-card">
-            <img src="https://images.unsplash.com/photo-1719161450230-71211ca7b3bd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Place" />
-            <h3>Gulmarg Mountains</h3>
-            <p>An adventure hub in the Pir Panjal Mountain Range.</p>
-          </div>
-          <div className="place-card">
-            <img src="https://images.unsplash.com/photo-1695395550316-8995ae9d35ff?q=80&w=2656&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Place" />
-            <h3>Jaipur City</h3>
-            <p>A city with unique attractions like forts and palaces.</p>
-          </div>
-        </div>
+      <h2>Most Visited Places</h2>
+<div className="places-carousel">
+  <div className="place-card">
+    <img src="https://images.unsplash.com/photo-1671512226229-e05294dd1970?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Place" />
+    <h3>Varanasi Ghats</h3>
+    <p>The soul of India’s ancient culture and spirituality.</p>
+  </div>
+  <div className="place-card">
+    <img src="https://images.unsplash.com/photo-1719161450230-71211ca7b3bd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Place" />
+    <h3>Gulmarg Mountains</h3>
+    <p>An adventure hub in the Pir Panjal Mountain Range.</p>
+  </div>
+  <div className="place-card">
+    <img src="https://images.unsplash.com/photo-1695395550316-8995ae9d35ff?q=80&w=2656&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Place" />
+    <h3>Jaipur City</h3>
+    <p>A city with unique attractions like forts and palaces.</p>
+  </div>
+</div>
+<div style={{ textAlign: 'center', marginTop: '50px' }}>
+  <button 
+    style={{
+      padding: '10px 20px',
+      fontSize: '16px',
+      color: '#fff',
+      backgroundColor: '#FF5722',
+      border: 'none',
+      borderRadius: '5px',
+      cursor: 'pointer',
+      transition: 'background-color 0.3s ease'
+    }}
+    onMouseOver={(e) => e.target.style.backgroundColor = '#E64A19'}
+    onMouseOut={(e) => e.target.style.backgroundColor = '#FF5722'}
+  >
+   <Link to="/destinations"> Explore More</Link>
+  </button>
+</div>
+
 
 {/* SVG Wave */}
 <div id="page-break" className="wave2">

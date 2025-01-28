@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 import './Header.css';
 
 const Header = () => {
+
+  const [viewCart, setViewCart] = useState(false);
+
+  const handleCartClick = () => {
+    setViewCart(true);
+    // Additional logic to show the cart or redirect to the cart page can be added here.
+  };
+
+
+
   return (
     <header className="header">
-      <div className="logo">
-        <h1>The Cultural Circuit</h1>
-      </div>
+       <div className="logo">
+      <Link to="/" className="logo-link">
+        <h1 className="rubik-glitch-pop-regular">TheCulturalCircuit</h1>
+      </Link>
+    </div>
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li>
@@ -15,18 +29,18 @@ const Header = () => {
           <li><Link to="/festivals">Festivals</Link></li>
           <li><Link to="/blog">Blog</Link></li>
           <li><Link to="/calendar">Calendar</Link></li>
-          <li><Link to="/contact-us">Contact Us</Link></li>
+          <li><Link to="/destinations">Tourism</Link></li>
           <li><Link to="/resources">Resources</Link></li>
           <li><Link to="/products">Products</Link></li>
         </ul>
       </nav>
       <div className="header-right">
-        <Link to="/admin-login" className="btn">Admin Login</Link>
+        <Link to="/login" className="btn">Login</Link>
         <div id="cart-icon" data-count="0">
-          <Link to="/cart" className="cart-icon">
-            <i className="fas fa-shopping-cart"></i>
-          </Link>
-        </div>
+      <Link to="" className="cart-icon" onClick={handleCartClick}>
+        <i className="fas fa-shopping-cart"></i>
+      </Link>
+    </div>
       </div>
     </header>
   );
