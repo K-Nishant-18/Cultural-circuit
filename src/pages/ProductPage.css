@@ -1,0 +1,136 @@
+/* Reset styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Banner Section */
+.ecommerce-banner {
+  position: relative;
+  background-image: url('/src/assets/images/banners/shopping.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ecommerce-banner-overlay {
+  background-color: rgba(60, 60, 60, 0.319);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ecommerce-banner-content h2 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border-bottom: 2px solid #020000;
+}
+
+.ecommerce-banner-content p {
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+}
+
+.advertisement-section {
+  width: 20%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ad-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-section {
+  width: 80%;
+  padding: 20px;
+}
+
+/* Filters */
+.filter-sort-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#category,
+#price-filter,
+#price-sort {
+  width: 220px;
+  height: 45px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.product-card .price {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  padding: 10px 20px;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}

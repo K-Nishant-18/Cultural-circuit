@@ -1,0 +1,30 @@
+.guides-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .guides-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .guide-card {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .guide-image {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  

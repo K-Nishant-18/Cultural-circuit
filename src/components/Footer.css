@@ -1,0 +1,31 @@
+.wave5 {
+  position: relative;
+  bottom: 70px;
+  left: -20px;    /* added px unit */
+  width: 100%;
+  margin: 0px;   /* added px unit */
+  padding: 0px;  /* corrected syntax and added px unit */
+  z-index: 10;
+}
+
+
+
+/* Animation for the wave path */
+.animated-path5 {
+  stroke: #000000; /* Stroke color */
+  stroke-width: 7; /* Stroke width */
+  fill: #000000; /* Remove fill to show the stroke */
+  stroke-dasharray: 1200; /* Total length of the path */
+  stroke-dashoffset: 1200; /* Start with the path hidden */
+  animation: drawPath 8s linear infinite; /* Smooth and continuous animation */
+}
+
+@keyframes drawPath {
+  0% {
+    stroke-dashoffset: 1200; /* Start with the path hidden */
+  }
+
+  100% {
+    stroke-dashoffset: 0; /* Reveal the path */
+  }
+}

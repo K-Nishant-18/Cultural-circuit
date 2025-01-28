@@ -1,0 +1,447 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #faebd0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Utility Classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  /* Hero Section */
+.hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('/src/assets/images/banners/blog.jpg') no-repeat center center/cover;
+    color: white;
+    height: 280px;
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+  }
+  
+  .hero p {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+  
+  .hero .btn {
+    padding: 15px 30px;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  .hero .btn.primary {
+    background: #ff5722;
+    color: white;
+    border: none;
+  }
+  
+  .hero .btn.primary:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+  }
+  
+  .hero .btn.secondary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+  
+  .hero .btn.secondary:hover {
+    background: #fff;
+    color: #333;
+    transform: scale(1.05);
+  }
+  
+
+
+  /* CSS for the wave effect */
+  .wave {
+    position: relative;
+    bottom: -110px;
+    left: -20px;    /* added px unit */
+    width: 100%;
+    margin: 0px;   /* added px unit */
+    padding: 0px;  /* corrected syntax and added px unit */
+    z-index: -10;
+}
+
+
+  
+  /* Animation for the wave path */
+  .animated-path6 {
+    stroke: #fbf1dd; /* Stroke color */
+    stroke-width: 7; /* Stroke width */
+    fill: #fbf1dd; /* Remove fill to show the stroke */
+    stroke-dasharray: 1200; /* Total length of the path */
+    stroke-dashoffset: 1200; /* Start with the path hidden */
+    animation: drawPath 8s linear infinite; /* Smooth and continuous animation */
+  }
+  
+  @keyframes drawPath {
+    0% {
+      stroke-dashoffset: 1200; /* Start with the path hidden */
+    }
+  
+    100% {
+      stroke-dashoffset: 0; /* Reveal the path */
+    }
+  }
+  
+
+
+  
+  .offers {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #fbf1dd;
+  border-radius: 10px;
+  padding-bottom: 80px;
+}
+
+.offers h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.offer-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.offer-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.offer-card h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.offer-card p {
+  color: #666;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.offer-card svg {
+  margin-bottom: 15px;
+}
+
+  
+  /* Places Section */
+  .visited-places {
+    padding: 60px 20px;
+    background: #fff;
+    /* padding: 50px 0; */
+  text-align: center;
+  }
+  
+  .visited-places h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .places-carousel {
+    display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  }
+  
+  .place-card {
+    min-width: 300px;
+    background: #f3f3f3;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding-bottom: 30px;
+  }
+  
+  .place-card img {
+    width: 400px;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .place-card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #ff5722;
+  }
+  
+  .place-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+
+
+  .wave2 {
+    position: relative;
+    bottom: -70px;
+    left: -20px;    /* added px unit */
+    width: 100%;
+    margin: 0px;   /* added px unit */
+    padding: 0px;  /* corrected syntax and added px unit */
+    z-index: 10;
+}
+
+
+  
+  /* Animation for the wave path */
+  .animated-path7 {
+    stroke: #fbeed4; /* Stroke color */
+    stroke-width: 7; /* Stroke width */
+    fill: #fbeed4; /* Remove fill to show the stroke */
+    stroke-dasharray: 1200; /* Total length of the path */
+    stroke-dashoffset: 1200; /* Start with the path hidden */
+    animation: drawPath 8s linear infinite; /* Smooth and continuous animation */
+  }
+  
+  @keyframes drawPath {
+    0% {
+      stroke-dashoffset: 1200; /* Start with the path hidden */
+    }
+  
+    100% {
+      stroke-dashoffset: 0; /* Reveal the path */
+    }
+  }
+
+
+
+
+
+  /* Features Section */
+  .features {
+    padding: 60px 20px;
+    background: #fbeed4;
+    position: relative;
+  }
+  
+  .features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 280px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .feature h3 {
+    font-size: 1.5rem;
+    color: #ff5722;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    background: #333;
+    color: white;
+    padding: 60px 20px;
+    position: relative;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .testimonial-slider {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial {
+    background: #444;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .testimonial p {
+    font-size: 1rem;
+    font-style: italic;
+  }
+  
+  .testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+
+
+
+
+  .wave3 {
+    position: relative;
+    bottom: -70px;
+    left: -20px;    /* added px unit */
+    width: 100%;
+    margin: 0px;   /* added px unit */
+    padding: 0px;  /* corrected syntax and added px unit */
+    z-index: 10;
+}
+
+
+  
+  /* Animation for the wave path */
+  .animated-path8 {
+    stroke: #ff5722; /* Stroke color */
+    stroke-width: 7; /* Stroke width */
+    fill: #ff5722; /* Remove fill to show the stroke */
+    stroke-dasharray: 1200; /* Total length of the path */
+    stroke-dashoffset: 1200; /* Start with the path hidden */
+    animation: drawPath 8s linear infinite; /* Smooth and continuous animation */
+  }
+  
+  @keyframes drawPath {
+    0% {
+      stroke-dashoffset: 1200; /* Start with the path hidden */
+    }
+  
+    100% {
+      stroke-dashoffset: 0; /* Reveal the path */
+    }
+  }
+
+
+
+
+  /* Vision Section */
+  .vision {
+    padding: 60px 20px;
+    background: #ff5722;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-bottom: 150px;
+  }
+  
+  .vision h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .vision p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,63 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #dedbdb;
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Position it at the top */
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .header-right .btn {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  .header-right .cart-icon {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  #cart-icon[data-count]:after {
+    content: attr(data-count);
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 0.8rem;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
