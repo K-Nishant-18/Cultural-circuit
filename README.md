@@ -30,7 +30,7 @@ The Cultural Circuit is a vibrant web-based platform dedicated to preserving, pr
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/cultural-circuit.git
+   https://github.com/K-Nishant-18/cultural-circuit.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -61,15 +61,19 @@ Open [http://localhost:3000](http://localhost:3000) to view the application in y
 - `react-router-dom`: ^7.0.2
 - `axios`: ^1.7.9
 - `styled-components`: ^6.1.13
-- Additional dependencies can be found in the [package.json](C:\Users\itsni\Desktop\Minor_Project\Code\Frontend\cultural-circuit\package.json) file.
 
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
 
+## Contact
+
+For any questions or feedback, please contact us at [me.knishant@gmail.com](me.knishant@gmail.com).
+
+
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) (In progress) file for details.
 ```
 
 Feel free to modify the content as needed, especially the repository URL and any additional sections you might want to include.
