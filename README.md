@@ -1,7 +1,7 @@
 
 # The Cultural Circuit
 
-The Cultural Circuit is a vibrant, web-based platform dedicated to preserving, promoting, and celebrating cultural heritage from around the world. It aims to engage, educate, and empower individuals to discover, appreciate, and preserve cultural traditions for future generations.
+The Cultural Circuit is a vibrant web-based platform dedicated to preserving, promoting, and celebrating India's cultural heritage worldwide. It aims to engage, educate, and empower individuals to discover, appreciate, and preserve cultural traditions for future generations.
 
 ## Table of Contents
 
