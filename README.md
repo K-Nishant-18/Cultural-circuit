@@ -1,70 +1,71 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# The Cultural Circuit
 
-## Available Scripts
+The Cultural Circuit is a vibrant, web-based platform dedicated to preserving, promoting, and celebrating cultural heritage from around the world. It aims to engage, educate, and empower individuals to discover, appreciate, and preserve cultural traditions for future generations.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Dependencies](#dependencies)
+- [Contributing](#contributing)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Blog Section**: Read insightful articles about heritage, culture, and preservation efforts.
+- **Festival Section**: Explore videos and articles on various Indian festivals.
+- **Tour Destination Section**: Discover hidden treasures, top attractions, and cultural marvels of India.
+- **Resources Section**: Access links to external cultural resources.
+- **Cultural Calendar**: View upcoming festivals, events, and workshops, and add them to your Google Calendar.
+- **Vendor Platform**: Local vendors can showcase and sell cultural and heritage products to a global audience.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/cultural-circuit.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd cultural-circuit
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To start the development server, run:
+```bash
+npm start
+```
+Open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend**: Built with React, featuring components for various sections like Home, Blog, Products, Vendors, and Events.
+- **Styling**: Utilizes CSS and styled-components for a responsive and visually appealing design.
+- **Routing**: Implemented using `react-router-dom` for seamless navigation between pages.
 
-### `npm run eject`
+## Dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `react`: ^18.3.1
+- `react-router-dom`: ^7.0.2
+- `axios`: ^1.7.9
+- `styled-components`: ^6.1.13
+- Additional dependencies can be found in the [package.json](C:\Users\itsni\Desktop\Minor_Project\Code\Frontend\cultural-circuit\package.json) file.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to modify the content as needed, especially the repository URL and any additional sections you might want to include.
