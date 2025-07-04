@@ -283,7 +283,7 @@ const CulturalCalendarPage = () => {
   return (
     <PageContainer>
       <Banner>
-        <h2>Cultural Events Calendar</h2>
+        <h2>Cultural Calendar</h2>
       </Banner>
       <Header>
         <h1>Upcoming Events</h1>
